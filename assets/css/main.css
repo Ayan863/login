@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  text-decoration: none;
+  margin: 0;
+}
+
+.card-Section {
+  background-image: url("https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.card-Section .card {
+  margin: 15px;
+  padding: 30px;
+  background-color: white;
+  width: 440px;
+  border-radius: 10px;
+}
+.card-Section .card h2 {
+  padding: 30px;
+  display: block;
+  font-family: Poppins;
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+}
+.card-Section .card .type {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 15px;
+}
+.card-Section .card .type span {
+  font-family: Poppins;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+  padding-left: 7px;
+}
+.card-Section .card .type .user-name {
+  display: flex;
+  flex-direction: column;
+}
+.card-Section .card .type .input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 372px;
+  border-bottom: 2px solid #666666;
+}
+.card-Section .card .type .input input {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.2;
+  display: block;
+  height: 55px;
+  background: transparent;
+  padding: 0 7px 0 17px;
+  border: none;
+  border: none;
+  outline: none;
+  transition: all 2s ease-in;
+}
+.card-Section .card .type .input input:focus {
+  outline: none;
+  border-color: transparent !important;
+}
+.card-Section .card .type .input .anime::after {
+  animation: line 2s forwards;
+}
+.card-Section .card .type .input::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -2px;
+  background-color: red;
+}
+.card-Section .card .password {
+  display: flex;
+  flex-direction: column;
+}
+.card-Section .button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-Section .button .forgot {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+}
+.card-Section .button .forgot a {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  text-align: end;
+  display: flex;
+  justify-content: end;
+}
+.card-Section .button .forgot button {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 390px;
+  height: 50px;
+  padding: 20px 0;
+  background: linear-gradient(to right, #14C9E0, #EB0EFD);
+  border-radius: 30px;
+  border: none;
+  transition: all 10s ease;
+}
+.card-Section .button .forgot button:hover {
+  transition: all 10s ease;
+  opacity: 0.8;
+  background: linear-gradient(to left, #14C9E0, #EB0EFD);
+}
+.card-Section .about {
+  display: flex;
+  flex-direction: column;
+}
+.card-Section .about .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.card-Section .about .social-media a {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+}
+.card-Section .about .social-media .icons {
+  display: flex;
+  gap: 10px;
+}
+.card-Section .about .social-media .icons .social {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all ease;
+}
+.card-Section .about .social-media .icons .social.facebook {
+  background-color: #3b5998;
+}
+.card-Section .about .social-media .icons .social.twitter {
+  background-color: #1da1f2;
+}
+.card-Section .about .social-media .icons .social.google {
+  background-color: #ea4335;
+}
+.card-Section .about .social-media .icons .social .media {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+.card-Section .about .social-media .icons .social:hover {
+  background-color: #666666;
+}
+.card-Section .about .sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-Section .about .sign a {
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+}
+
+@keyframes line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
